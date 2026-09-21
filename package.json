@@ -1,0 +1,19 @@
+{
+  "name": "novoprevoz",
+  "version": "1.0.0",
+  "description": "NOVOPREVOZ - Kompletan full-stack informacioni sistem za autobusku kompaniju (javni sajt + admin panel + REST API)",
+  "main": "server/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "author": "NOVOPREVOZ",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
