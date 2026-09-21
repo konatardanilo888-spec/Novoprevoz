@@ -74,6 +74,8 @@ CREATE TABLE IF NOT EXISTS notifications (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
     title      TEXT NOT NULL,
     content    TEXT NOT NULL,
+        title_en   TEXT,
+        content_en TEXT,
     type       TEXT NOT NULL DEFAULT 'INFO' CHECK (type IN ('INFO', 'UPOZORENJE', 'VAZNO')),
     is_active  INTEGER NOT NULL DEFAULT 1 CHECK (is_active IN (0, 1)),
     created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')),
