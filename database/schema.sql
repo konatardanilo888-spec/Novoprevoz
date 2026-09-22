@@ -95,6 +95,20 @@ CREATE TABLE IF NOT EXISTS settings (
 );
 
 -- ------------------------------------------------------------
+-- Tabela: gallery
+-- Fotografije za javnu galeriju na sajtu. Slika se čuva kao
+-- base64 data URL direktno u bazi (bez odvojenog fajl-sistema za
+-- upload), da bi ostala konzistentna sa ostatkom aplikacije koja
+-- već sve podatke drži isključivo u SQLite bazi.
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS gallery (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    image_data TEXT NOT NULL,
+    caption    TEXT,
+    sort_order INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))
+);
+-- ------------------------------------------------------------
 -- Tabela: contact_messages
 -- Poruke poslate preko kontakt forme na javnom sajtu.
 -- Email slanje nije povezano (vidi README) - poruke se
