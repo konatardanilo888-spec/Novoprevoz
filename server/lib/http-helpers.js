@@ -11,7 +11,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { URL } = require('node:url');
 
-const MAX_BODY_SIZE = 1024 * 1024; // 1 MB - dovoljno za JSON forme ovog projekta
+const MAX_BODY_SIZE = 6 * 1024 * 1024; // 6 MB - dovoljno za JSON forme i base64 fotografije za galeriju
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
