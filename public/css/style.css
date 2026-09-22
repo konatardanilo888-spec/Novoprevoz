@@ -312,7 +312,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   gap: 14px;
   align-items: end;
 }
-.field { text-align: left; }
+.field { text-align: left; min-width: 0; }
 .field label {
   display: block;
   font-size: 0.78rem;
@@ -322,7 +322,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   color: var(--color-text-muted);
   margin-bottom: 8px;
 }
-.field select, .field input {
+.field select, .field input { min-width: 0; max-width: 100%;
   width: 100%;
   padding: 13px 14px;
   border-radius: var(--radius-sm);
@@ -332,7 +332,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   font-size: 0.98rem;
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
-.field select:focus, .field input:focus {
+.field input[type="date"] { -webkit-appearance: none; appearance: none; } .field select:focus, .field input:focus {
   border-color: var(--color-blue);
   box-shadow: 0 0 0 4px rgba(20, 115, 230, 0.12);
   outline: none;
