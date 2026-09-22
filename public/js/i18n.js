@@ -27,6 +27,7 @@ window.I18N = (() => {
       'nav.departures': 'Polasci',
       'nav.about': 'O nama',
       'nav.contact': 'Kontakt',
+      'nav.gallery': 'Galerija',
       'nav.findTrip': 'Pronađi vožnju',
       'nav.openMenu': 'Otvori meni',
       'footer.tagline': 'Pouzdan i moderan autobuski prevoz širom Crne Gore. Putujte jednostavno, putujte sa nama.',
@@ -47,6 +48,7 @@ window.I18N = (() => {
       'page.title.tripDetail': 'Detalji vožnje - NOVOPREVOZ',
       'page.title.about': 'O nama - NOVOPREVOZ',
       'page.title.contact': 'Kontakt - NOVOPREVOZ',
+      'page.title.gallery': 'Galerija - NOVOPREVOZ',
 
       // ---------- Početna ----------
       'hero.title': 'Putujte jednostavno. Putujte sa NOVOPREVOZOM.',
@@ -176,6 +178,15 @@ window.I18N = (() => {
       'contact.errorMessage': 'Poruka mora imati bar 5 karaktera.',
       'contact.successDefault': 'Poruka je uspješno poslata.',
       'contact.errorDefault': 'Neispravni podaci.',
+
+      // ---------- Galerija ----------
+      'gallery.eyebrow': 'Fotografije',
+      'gallery.title': 'Galerija',
+      'gallery.subtitle': 'Pogledajte fotografije našeg voznog parka, stanica i putovanja.',
+      'gallery.loading': 'Učitavanje fotografija...',
+      'gallery.empty': 'Trenutno nema dostupnih fotografija.',
+      'gallery.loadError': 'Nije moguće učitati galeriju.',
+      'gallery.viewPhoto': 'Pogledaj fotografiju',
     },
     en: {
       'skip.content': 'Skip to content',
@@ -184,6 +195,7 @@ window.I18N = (() => {
       'nav.departures': 'Departures',
       'nav.about': 'About',
       'nav.contact': 'Contact',
+      'nav.gallery': 'Gallery',
       'nav.findTrip': 'Find a trip',
       'nav.openMenu': 'Open menu',
       'footer.tagline': 'Reliable, modern bus transport across Montenegro. Travel simply, travel with us.',
@@ -203,6 +215,7 @@ window.I18N = (() => {
       'page.title.tripDetail': 'Trip details - NOVOPREVOZ',
       'page.title.about': 'About us - NOVOPREVOZ',
       'page.title.contact': 'Contact - NOVOPREVOZ',
+      'page.title.gallery': 'Gallery - NOVOPREVOZ',
 
       'hero.title': 'Travel simply. Travel with NOVOPREVOZ.',
       'hero.subtitle': 'Find your departure quickly and easily.',
@@ -325,6 +338,15 @@ window.I18N = (() => {
       'contact.errorMessage': 'The message must be at least 5 characters long.',
       'contact.successDefault': 'Your message was sent successfully.',
       'contact.errorDefault': 'Invalid data.',
+
+      // ---------- Gallery ----------
+      'gallery.eyebrow': 'Photos',
+      'gallery.title': 'Gallery',
+      'gallery.subtitle': 'Take a look at our fleet, stations and trips.',
+      'gallery.loading': 'Loading photos...',
+      'gallery.empty': 'No photos available right now.',
+      'gallery.loadError': 'Unable to load the gallery.',
+      'gallery.viewPhoto': 'View photo',
     },
   };
 
