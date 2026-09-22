@@ -33,6 +33,7 @@ router.get('/polasci', servePublic('polasci.html'));
 router.get('/voznja', servePublic('voznja.html'));
 router.get('/o-nama', servePublic('o-nama.html'));
 router.get('/kontakt', servePublic('kontakt.html'));
+router.get('/galerija', servePublic('galerija.html'));
 
 // ---------- Admin stranice ----------
 router.get('/admin', (req, res) => res.redirect('/admin/dashboard'));
@@ -43,6 +44,7 @@ router.get('/admin/trips/new', requirePageAuth, serveAdmin('trip-form.html'));
 router.get('/admin/trips/:id/edit', requirePageAuth, serveAdmin('trip-form.html'));
 router.get('/admin/stations', requirePageAuth, serveAdmin('stations.html'));
 router.get('/admin/notifications', requirePageAuth, serveAdmin('notifications.html'));
+router.get('/admin/gallery', requirePageAuth, serveAdmin('gallery.html'));
 router.get('/admin/users', requirePageAuth, serveAdmin('users.html'));
 router.get('/admin/messages', requirePageAuth, serveAdmin('messages.html'));
 router.get('/admin/settings', requirePageAuth, serveAdmin('settings.html'));
